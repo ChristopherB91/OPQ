@@ -16,3 +16,12 @@ html{
     padding-bottom: 45px;
     left: 900px
 }
+#btn2{
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+label{
+    display: flex;
+}
