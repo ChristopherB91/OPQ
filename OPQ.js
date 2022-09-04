@@ -42,7 +42,7 @@ const Questions = [{
 },
 {
     id: 4,
-    question: 'How many swords does zoro use',
+    question: 'How many swords does zoro use?',
     answers: [
         {text: '1', correct: false},
         {text: '2', correct: false},
@@ -153,6 +153,7 @@ next.addEventListener("click", () => {
         console.log(id);
     }
     else{
-        window.location.href('/Pages/Results.html')
+        window.open('Results.html')
+        console.log('hello')
     }
 })
