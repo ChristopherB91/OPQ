@@ -153,7 +153,7 @@ next.addEventListener("click", () => {
         console.log(id);
     }
     else{
-        window.open('Results.html')
+        window.location.href = 'Results.html'
         console.log('hello')
     }
 })

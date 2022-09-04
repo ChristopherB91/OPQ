@@ -14,8 +14,9 @@ html{
     padding-right: 60px;
     padding-top: 45px;
     padding-bottom: 45px;
-    left: 900px
+    left: 47%
 }
+
 .evaluate,.next{
     padding-left: 30px;
     padding-right: 35px;
@@ -39,3 +40,9 @@ html{
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    #btn1 {
+      left: 37%
+    }
+  }
