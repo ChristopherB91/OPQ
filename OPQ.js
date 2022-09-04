@@ -152,6 +152,7 @@ next.addEventListener("click", () => {
         iterate(id);
         console.log(id);
     }
-    if(id = 4){
+    else{
+        window.location.href('/Pages/Results.html')
     }
 })
