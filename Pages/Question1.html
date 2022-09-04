@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/OPQ/OPQ.css" rel="stylesheet" />
-    <h1>Answer Question #1</h1>
+    <link rel="stylesheet" href="/OPQ/OPQ.css" />
   </head>
   <body>
-    <p1>Q#1 What is the name of the main character?</p1>
-    <label>
-        <input type="radio" name="Q1" value="L">Donquixote Doflamingo</input>
-    </label>
-    <br>
-    <label>
-        <input type="radio" name="Q1" value="L">Roronoa Zoro</input> 
-    </label>
-    <br>
-    <label>
-        <input type="radio" name="Q1" value="W">Monkey D. Luffy</input>
-    </label>
-    <br>
-    <label>
-        <input type="radio" name="Q1" value="L">Buggy</input>
-    </label>
-    <br>
-    <a href="Question2.html"><button type="submit" class="SubBtn">Submit</button></a>
+    <div class="panel">
+      <div class="result"></div>
+      <div class="question-container">
+        <b id="question"></b>
+      </div>
+      <br />
+      <div class="option-container">
+        <button class="option" onclick="" id="op1">option1</button>
+
+        <button class="option" id="op2">option2</button>
+
+        <button class="option" id="op3">option3</button>
+
+        <button class="option" id="op4">option4</button>
+      </div>
+      <br />
+      <div class="nav">
+        <button class="evaluate">Evaluate</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+    <script src="/OPQ/OPQ.js"></script>
   </body>
 </html>
