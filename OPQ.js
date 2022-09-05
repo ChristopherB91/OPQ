@@ -54,6 +54,15 @@ const Questions = [{
 
 var start = true;
 
+function disable() {
+    if(document.getElementsByClassName('evaluate').disabled = true){
+        document.getElementsByClassName('evaluate').disabled = false
+    }
+    if(document.getElementsByClassName('next').disabled = false){
+        document.getElementsByClassName('evaluate').disabled = true
+    }
+    
+}
 function iterate(id){
     var result = document.getElementsByClassName("result");
     result[0].innerText = '';
@@ -129,11 +138,12 @@ function iterate(id){
         if (selected == "true") {
             result[0].innerHTML = Questions[id].question + " = True";
             result[0].style.color = "green";
-            QuestionNum.push(Questions[id]++)
+            QuestionNum.push(Questions[id])
         } else {
-            result[0].innerHTML = "False";
+            result[0].innerHTML = Questions[id].question + " = False";
             result[0].style.color = "red";
         }
+        disableNext
     })
 }
   
@@ -145,15 +155,18 @@ if (start) {
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
   
+disableNext = true
 next.addEventListener("click", () => {
     start = false;
     if (id < 4) {
         id++;
         iterate(id);
-        console.log(id);
+        console.log(id, QuestionNum);
     }
     else{
         window.location.href = 'Results.html'
         console.log('hello')
     }
+    disableNext = true;
+    disableEval = false;
 })
